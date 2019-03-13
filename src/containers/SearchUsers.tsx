@@ -38,7 +38,7 @@ const mapStateToProps = (state: any): SearchUsersStateProps => ({
     storeUsers: state.users,
 })
 
-const mapDispatchToProps = (dispatch: React.Dispatch<any>): SearchUsersStateDispatchers => ({
+const mapDispatchToProps = (dispatch: any): SearchUsersStateDispatchers => ({
     dispatchGetUsers: () => dispatch(getUsers()),
 })
 

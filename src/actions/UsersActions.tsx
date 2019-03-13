@@ -13,7 +13,7 @@ export const {
     'RESPONSE_USERS_FAILURE',
 );
 
-export const getUsers = async (): Promise<any> => (dispatch: any): Promise<any> => {
+export const getUsers = () => (dispatch: any) => {
     dispatch(requestUsers());
 
     return fetch(URL).then((response: any) => {

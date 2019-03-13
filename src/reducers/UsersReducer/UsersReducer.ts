@@ -26,6 +26,7 @@ const UsersReducer = handleActions<any>(
                 ...store,
                 users: {
                     ...store.users,
+                    ...newUsers,
                 },
                 fetchingData: false,
             });
