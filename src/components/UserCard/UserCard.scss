@@ -1,0 +1,41 @@
+@import "../../styles/colors";
+
+.user-card {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    width: 550px;
+    box-shadow: 0 4px 10px 0 rgba(196, 210, 221, 0.5);
+    border: solid 1px rgba(196, 210, 221, 0.5);
+    color: rgb(0, 38, 58);
+    background-color: whitesmoke;
+    margin-left: 30px;
+}
+
+.user-card__contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.user-card__column {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.user-card__info,
+.user-card__form {
+    display: flex;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+    font-family: Arial, sans-serif;
+    span {
+        font-weight: normal;
+    }
+}
+
+.user-card__contact a{
+    color: $orange;
+    cursor: pointer;
+    margin: 0px 5px;
+}

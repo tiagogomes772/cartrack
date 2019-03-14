@@ -3,7 +3,7 @@ import { UserStore } from './UsersReducer.types';
 
 const initialUserReducer: UserStore = {
     fetchingData: false,
-    users: {},
+    users: [],
 };
 
 const UsersReducer = handleActions<any>(
@@ -17,17 +17,9 @@ const UsersReducer = handleActions<any>(
             fetchingData: false,
         }),
         RESPONSE_USERS_SUCCESS: (store: UserStore, action: any) => {
-            const newUsers: any = {};
-            action.payload && action.payload.users.map((user: any) => {
-                const {id, ...userData} = user;
-                newUsers[id] = userData;
-            })
             return ({
                 ...store,
-                users: {
-                    ...store.users,
-                    ...newUsers,
-                },
+                users: action.payload.users,
                 fetchingData: false,
             });
         },

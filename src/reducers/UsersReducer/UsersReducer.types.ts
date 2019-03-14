@@ -1,4 +1,3 @@
-import { Action } from "../../types";
 
 interface Address {
     street: string;

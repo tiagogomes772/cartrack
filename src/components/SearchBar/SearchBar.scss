@@ -1,0 +1,51 @@
+@import "../../styles/colors";
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.search-bar__filters {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.search-bar-input {
+    width: 50%;
+    display: flex;
+    input {
+        width: 100%;
+        border-radius: 5px;
+        border: solid 1.3px $lightblue;
+        background-color: $white;
+    }
+    .fa.fa-search {
+        min-width: 16px;
+    }
+}
+
+.search-bar-button {
+    outline: none;
+    border: none;
+    background: $white;
+}
+
+.fa.fa-search {
+    margin-left: 5px;
+}
+
+.button {
+    border-radius: 5px;
+    border: solid 1.3px $lightblue;
+    background-color: $white;
+    margin-left: 15px;
+    height: 20px;
+}
+
+.button--enabled {
+    background-color: $lightblue;
+}

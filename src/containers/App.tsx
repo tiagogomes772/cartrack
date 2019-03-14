@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
 import { withRouter, RouteComponentProps, Switch, Route } from 'react-router-dom';
 import SearchUsers from './SearchUsers';
-import { NotFound } from './NotFound';
+import { NotFound } from '../components/NotFound/NotFound';
+import React from 'react';
 
-class App extends Component<RouteComponentProps<any>> {
+class App extends React.Component<RouteComponentProps<any>> {
   render() {
     return (
       <div className="App">
